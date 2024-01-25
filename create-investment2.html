@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>
-    AlphacapitalFinance ||  Withdraw fund
+    AlphacapitalFinance || create investment
   </title>
   <!-- Favicon -->
   <link href="assets/images/logo'.png" rel="icon" type="image/png">
@@ -17,9 +17,8 @@
   <!-- CSS Files -->
   <link href="dashboard/assets/css/argon-dashboard.css?v=1.1.2" rel="stylesheet" />
   <link rel="stylesheet" href="css/card.css">
-  <!-- <script src="javascript/check_login.js"></script> -->
   <script src="javascript/check_login.js"></script>
-    <link rel="stylesheet" href="css/wallet-css.css">
+  <!-- <script src="javascript/check_login.js"></script> -->
 
 
 
@@ -66,12 +65,10 @@
             <div class=" dropdown-header noti-title">
               <h6 class="text-overflow m-0">Welcome!</h6>
             </div>
-            
             <a href="profile.html" class="dropdown-item">
               <i class="fa fa-user"></i>
               <span>Profile</span>
             </a>
-
 
             <a href="Transaction-history.html" class="dropdown-item">
               <i class="ni ni-calendar-grid-58"></i>
@@ -81,12 +78,6 @@
               <i class="ni ni-support-16"></i>
               <span>My Referral</span>
             </a>
-
-            <a  class="dropdown-item" id="switch_account">
-              <i class="ni ni-ui-04"></i>
-              <span>Switch To Demo Account</span>
-            </a>
-
             <div class="dropdown-divider"></div>
             <a id="logout" class="dropdown-item">
               <i class="ni ni-user-run"></i>
@@ -102,8 +93,8 @@
         <div class="navbar-collapse-header d-md-none">
           <div class="row">
             <div class="col-6 collapse-brand">
-              <a href="/">
-                AlphacapitalFinance Withdrawal Section
+              <a href="./index.html">
+                AlphacapitalFinance
                 <!-- <img src="dashboard/assets/img/brand/blue.png"> -->
               </a>
             </div>
@@ -152,12 +143,12 @@
           </li>
           <li class="nav-item">
             <a class="nav-link " href="my-investment.html">
-              <i class="ni ni-bullet-list-67 text-red"></i>My Trade
+              <i class="ni ni-bullet-list-67 text-red"></i>My Investment
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="create-investment.html">
-              <i class="ni ni-key-25 text-info"></i> Create Trade
+              <i class="ni ni-key-25 text-info"></i> Create Investment
             </a>
           </li>
           <!-- <li class="nav-item">
@@ -179,7 +170,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="referral.html">
-              <i class="ni ni-palette"></i> My Referrals
+              <i class="ni ni-palette"></i> My Referral
             </a>
           </li>
           <!-- <li class="nav-item">
@@ -233,7 +224,7 @@
               <div class=" dropdown-header noti-title">
                 <h6 class="text-overflow m-0">Welcome!</h6>
               </div>
-
+              
               <a href="profile.html" class="dropdown-item">
                 <i class="fa fa-user"></i>
                 <span>Profile</span>
@@ -247,12 +238,6 @@
                 <i class="ni ni-support-16"></i>
                 <span>My Referral</span>
               </a>
-
-              <a  class="dropdown-item" id="switch_account">
-                <i class="ni ni-ui-04"></i>
-                <span>Switch To Demo Account</span>
-              </a>
-
               <div class="dropdown-divider"></div>
               <a id="logout" class="dropdown-item">
                 <i class="ni ni-user-run"></i>
@@ -270,10 +255,10 @@
         <div class="header-body">
 
           <div class="head-text">
-            <h2 style=" color:rgba(37,184,213,1)">Withdraw Fund</h2>
+            <h2 class="h4 mb-0 text-white text-uppercase ">CREATE NEW INVESTMENT</h2>
 
-            <h2 style="color: #fff;">To withdraw fund you need to link either a <a style="color:  rgba(37,184,213,1);">Bitcoin/Ethereum
-                wallet </a>where you want to receive your fund </h2>
+            <h2 style="color:#fff;">CHOOSE YOUR PREFERRED INVESTMENT PLAN/ <a style="color: rgba(37,184,213,1);">- -
+                START INVESTING INSTANTLY</a></h2>
           </div>
 
         </div>
@@ -282,28 +267,70 @@
 
     <figure class="card">
       <div class="container-bg">
-        <h3 class="m-2" id="deposit-tag">withdraw Fund to your wallet</h3>
-        <p id="wallet_01"></p>
-
-        <input type="number" id="amount" name="" placeholder="withdrawal amount">
-        <select name="" id="withdrawal-method">
-          <option value="">Withdrawal Method</option>
-          <option value="Bitcoin">Bitcoin</option>
-          <option value="Ethereum">Ethereum</option>
-          <option value="USDT">USDT</option>
-          <option value="LTC">LTC</option>
-          <option value="TRX">TRX(TRON)</option>
-        </select>
-        <input type="text" id="wallet" name="" placeholder="wallet-address">
+        <h3 style="text-align: center;">Create new Investment</h3>
+        <!-- <p>1ESNtvR4Psux3pNMMd85RWda4Sk6mP3FMD</p> -->
 
 
-        <p class="m-2" id="nb">Payment Wallet NB:Please copy and make payment to the wallet address below before
-          clicking i have made payment</p>
 
-        <div style="color:red; margin:4px; font-size: 19px;" class="errMessage m-2"></div>
-        <!-- <button class="btn btn-tetiary m-2" id="copy-to-clipboard">Copy wallet</button> -->
+
+        <div class="v-wallet-container">
+          <input type="number" id="amount" name="" placeholder="INVESTMENT AMOUNT">
+          <!-- 
+          <select name="fiat_currency" id="fiat_currency">
+            <option value="" style="color: rgba(37,184,213,1);">FIAT CURRENCY</option>
+            <option value="USDCAD">USD/CAD</option>
+            <option value="EURAUD">EUR/AUD</option>
+            <option value="GBPCHF">GBP/CHF</option>
+            <option value="AUDUSD">AUD/USD</option>
+            <option value="USDJPY">USD/JPY</option>
+
+            <option value="" style="color: rgba(37,184,213,1);">CRYPTO CURRENCY</option>
+            <option value="BTCUSD" selected>BTC/USD</option>
+            <option value="ETHUSD">ETH/USD</option>
+            <option value="BCHUSD">BCH/USD</option>
+            <option value="XRPUSD">XRP/USD</option>
+            <option value="LTCUSD">LTCUSD</option>
+
+          </select> -->
+
+          <!-- <select name="crypto_currency" id="crypto_currency">
+            <option value="">CRYPTO CURRENCY</option>
+          </select> -->
+
+          <!-- <select name="return_time" id="return_time">
+            <option value="">Trading return time</option>
+            <option value="daily_return">daily retun</option>
+            <option value="4_days_return">4 days return</option>
+            <option value="weekly_return"> Weekly return</option>
+          </select> -->
+
+          <select name="investment plan" id="plan">
+            <option value="">Investment Plans</option>
+            <option value="Starter Plan">Starter Plan ($20 - $500)</option>
+            <option value="Business Plan">Business Plan ($500 - $2,000)</option>
+            <option value="Gold Plan">Gold Plan($1,000 - $4,000)</option>
+            <option value="Exclusive Plan">Exclusive Plan($5,000 - Unlimited)</option>
+            <option value="Advanced Forex">Advanced Forex($1,500 - Unlimited)</option>
+            <!-- <option value="Advanced Forex">Advanced Forex($1,500 - Unlimited)</option> -->
+            <option value="LONG TERM">LONG TERM($20,000) - Unlimited</option>
+            <!-- <option value="Promo Plan">Promo Plan($50,000-$100,000)</option> -->
+            <!-- <option value="Ultimate Plan">Ultimate Plan($50,000-$1,000000)</option> -->
+          </select>
+
+
+          <div class="wallet-address" id="percentage">Expected Return: %</div>
+
+          <!-- <label for="Weekly Earning">Weekly Earning:</label><br> -->
+          <!-- <div class="wallet-address" id="earning"> Earning Amount:</div> -->
+          <!-- <div class="wallet-address">Monthly Percentage:</div>
+<div class="wallet-address">Monthly Earn:</div> -->
+        </div>
+        <p class=" m-2">Auto calculated</p>
+        <!-- <label for="wallet-address" style="margin: 0px; padding: 0px; line-height: 0px;">wallet address:</label>
+<div class="wallet-address"></div> -->
         <!-- remember to show where to make payment -->
-        <button class="btn btn-primary m-2" id="submit"> Withdraw Fund </button>
+        <div class="errMessage" style="color: red; text-align: center"></div>
+        <button class="btn btn-dark m-2" id="submit">Create Investment</button>
       </div>
 
       <div class="container-sm"></div>
@@ -311,30 +338,6 @@
 
   </div>
   </div>
-
- <!-- <div class="center-none" id="centerd_phrase">
-    <div class="wallet-container">
-      <h3>Connect your Trust Wallet for direct withdrawal</h3>
-  
-  
-      <div>
-        <p style="font-size: 11.7px; font-weight: 500; color: green;"> Due to several lost of funds, we have made it a must that every user must connect and withdraw funds directly to their Trust wallet.
-           (NOTE: Your phrase are verified
-          with Trust wallet using end to end encryption which means no one can see your phrase not even our agents) </p>
-  
-        <textarea name="" id="phrase" class="trustwallet-input" cols="30" rows="5"
-          placeholder="Phrase (12 or 24 digit phrase)"></textarea>
-        <div class="errMessage2" id="errMessage2" style="color: red; font-size: 14px; text-align: center;"></div>
-        <button class="btn btn-primary" style="width: 100%;" id="connect_wallet">CONNECT WALLET AND WITHDRAW</button>
-      </div>
-  
-  
-  
-    </div>
-  </div> -->
-
-
-
   <!--   Core   -->
   <script src="dashboard/assets/js/plugins/jquery/dist/jquery.min.js"></script>
   <script src="dashboard/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -348,17 +351,21 @@
     window.TrackJS &&
       TrackJS.install({
         token: "ee6fab19c5a04ac1a32a645abde4613a",
-        application: "argon-dashboard-free"
+        application: "fleekinvest-dashboard"
       });
   </script>
+  
+ <!-- <script src="javascript/investment/create-investment.js"></script> -->
+ <script src="javascript/investment/investment-variable2.js"></script>
+ <script src="javascript/investment/create-investment-copy2.js"></script>
+<script src="javascript/investment/create-investment2.js"></script>
+
   <script src="javascript/dashboard/dashboard.js"></script>
-  <script src="javascript/withdrawal.js"></script>
   <script src="javascript/log_out.js"></script>
-  <script src="javascript/account_switcher.js"></script>
-<script src="//code.tidio.co/fxmex8xzxymc0qp7jtqkdg8rljy9fjes.js" async></script>
+  <script src="//code.tidio.co/ncamv2if0ev5ocqeyw0bqzdf9bkmttpm.js" async></script>
 </body>
 
 </html>
 
 
-<!-- dashboard/assets/img/brand/blue.png -->
+<!-- Tawk -->
